@@ -25,5 +25,11 @@ public class Main {
         Truck truck = truckBuilder.getresult();
         System.out.println("Caminhão: " +truck.result());
 
+        CarBuilder builderSport = new CarBuilder();
+        director.constructSportCar(builderSport);
+
+        Car carSport = builderSport.getresult();
+        System.out.println(carSport.getCarType() + " produzido com sucesso!");
+        System.out.println("carSport: " +carSport);
     }
 }

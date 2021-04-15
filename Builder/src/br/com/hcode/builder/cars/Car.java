@@ -10,15 +10,28 @@ public class Car {
     private final int seats;
     private final Engine engine;
     private final Transmission transmission;
+    private final String color;
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "carType=" + carType +
+                ", seats=" + seats +
+                ", engine=" + engine +
+                ", transmission=" + transmission +
+                ", color='" + color + '\'' +
+                '}';
+    }
 
     public Car(CarType carType,
                int seats,
                Engine engine,
-               Transmission transmission){
+               Transmission transmission, String color){
         this.carType = carType;
         this.seats = seats;
         this.engine = engine;
         this.transmission = transmission;
+        this.color = color;
     }
 
     public CarType getCarType(){

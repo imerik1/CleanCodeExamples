@@ -34,6 +34,10 @@ public class TruckBuilder implements IBuilder {
         this.engine = engine;
     }
 
+    @Override
+    public void setColor(String color) {
+    }
+
     public Truck getresult(){
         return new Truck(carType, seats, engine, transmission);
     }

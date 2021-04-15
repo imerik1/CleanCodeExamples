@@ -10,4 +10,5 @@ public interface IBuilder {
     void setSeats(int seats);
     void setTransmission(Transmission transmission);
     void setEngine(Engine engine);
+    void setColor(String yellow);
 }
